@@ -9,7 +9,7 @@ import Foundation
 
 class StarshipController {
     
-    // https://swapi.dev/api/starships/
+    //https://swapi.dev/api/starships/
     private static let baseURLString = "https://swapi.dev/api/"
     private static let starshipsComponentString = "starships"
     private static let searchQueryString = "search"
