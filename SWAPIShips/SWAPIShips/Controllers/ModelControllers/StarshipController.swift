@@ -10,13 +10,13 @@ import Foundation
 class StarshipController {
     
     // https://swapi.dev/api/starships/
-    private static let baseURL = URL(string: "https://swapi.dev/api/")
+    private static let baseURLString = "https://swapi.dev/api/"
     private static let starshipsComponentString = "starships"
     private static let searchQueryString = "search"
     
     static func fetchStarships(with searchTerm: String, completion: @escaping (Result <[Starship], StarshipError>) -> Void) {
         
-        guard let baseURL = baseURL else { return completion(.failure(.unableToUnwrap)) }
+        guard let baseURL = URL(string: baseURLString) else { return completion(.failure(.unableToUnwrap)) }
         let starshipsURL = baseURL.appendingPathComponent(starshipsComponentString)
         var components = URLComponents(url: starshipsURL, resolvingAgainstBaseURL: true)
         let searchQuery = URLQueryItem(name: searchQueryString, value: searchTerm)
