@@ -12,6 +12,8 @@
 		2A281E032568D940004835E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A281E012568D940004835E9 /* Main.storyboard */; };
 		2A281E052568D942004835E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A281E042568D942004835E9 /* Assets.xcassets */; };
 		2A281E082568D942004835E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A281E062568D942004835E9 /* LaunchScreen.storyboard */; };
+		2A281E1A2568DB9E004835E9 /* Starship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A281E192568DB9E004835E9 /* Starship.swift */; };
+		2A281E1E2568DDBD004835E9 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A281E1D2568DDBD004835E9 /* Film.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		2A281E042568D942004835E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A281E072568D942004835E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A281E092568D942004835E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A281E192568DB9E004835E9 /* Starship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starship.swift; sourceTree = "<group>"; };
+		2A281E1D2568DDBD004835E9 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		2A281DFA2568D940004835E9 /* SWAPIShips */ = {
 			isa = PBXGroup;
 			children = (
+				2A281E182568DB94004835E9 /* Models */,
 				2A281E152568D9AE004835E9 /* Views */,
 				2A281E102568D98D004835E9 /* Resources */,
 			);
@@ -86,6 +91,15 @@
 				2A281E012568D940004835E9 /* Main.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2A281E182568DB94004835E9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2A281E192568DB9E004835E9 /* Starship.swift */,
+				2A281E1D2568DDBD004835E9 /* Film.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +173,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A281DFC2568D940004835E9 /* AppDelegate.swift in Sources */,
+				2A281E1E2568DDBD004835E9 /* Film.swift in Sources */,
+				2A281E1A2568DB9E004835E9 /* Starship.swift in Sources */,
 				2A281DFE2568D940004835E9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
