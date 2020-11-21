@@ -16,6 +16,8 @@
 		2A281E1E2568DDBD004835E9 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A281E1D2568DDBD004835E9 /* Film.swift */; };
 		2A281E252568DF34004835E9 /* StarshipController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A281E242568DF34004835E9 /* StarshipController.swift */; };
 		2A281E292568E06C004835E9 /* StarshipError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A281E282568E06C004835E9 /* StarshipError.swift */; };
+		2A281E2D2568E4D1004835E9 /* StarshipListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A281E2C2568E4D1004835E9 /* StarshipListTableViewController.swift */; };
+		2A281E302568E652004835E9 /* StarshipDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A281E2F2568E652004835E9 /* StarshipDetailTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		2A281E1D2568DDBD004835E9 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
 		2A281E242568DF34004835E9 /* StarshipController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipController.swift; sourceTree = "<group>"; };
 		2A281E282568E06C004835E9 /* StarshipError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipError.swift; sourceTree = "<group>"; };
+		2A281E2C2568E4D1004835E9 /* StarshipListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipListTableViewController.swift; sourceTree = "<group>"; };
+		2A281E2F2568E652004835E9 /* StarshipDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipDetailTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,8 @@
 		2A281E222568DF0F004835E9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				2A281E2C2568E4D1004835E9 /* StarshipListTableViewController.swift */,
+				2A281E2F2568E652004835E9 /* StarshipDetailTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -212,10 +218,12 @@
 			files = (
 				2A281E292568E06C004835E9 /* StarshipError.swift in Sources */,
 				2A281DFC2568D940004835E9 /* AppDelegate.swift in Sources */,
+				2A281E302568E652004835E9 /* StarshipDetailTableViewController.swift in Sources */,
 				2A281E1E2568DDBD004835E9 /* Film.swift in Sources */,
 				2A281E1A2568DB9E004835E9 /* Starship.swift in Sources */,
 				2A281E252568DF34004835E9 /* StarshipController.swift in Sources */,
 				2A281DFE2568D940004835E9 /* SceneDelegate.swift in Sources */,
+				2A281E2D2568E4D1004835E9 /* StarshipListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -44,7 +44,7 @@ class StarshipController {
         }.resume()
     }
     
-    static func getFilms(with filmURL: String, completion: @escaping (Result<Film, StarshipError>) -> Void) {
+    static func fetchFilms(with filmURL: String, completion: @escaping (Result<Film, StarshipError>) -> Void) {
         guard let url = URL(string: filmURL) else { return completion(.failure(.unableToUnwrap)) }
         print(url)
         
