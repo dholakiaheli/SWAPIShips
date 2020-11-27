@@ -12,6 +12,12 @@
 		2A281E032568D940004835E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A281E012568D940004835E9 /* Main.storyboard */; };
 		2A281E052568D942004835E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A281E042568D942004835E9 /* Assets.xcassets */; };
 		2A281E082568D942004835E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A281E062568D942004835E9 /* LaunchScreen.storyboard */; };
+		68FD21E2256984C800F5C989 /* Starship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FD21E1256984C800F5C989 /* Starship.swift */; };
+		68FD21E52569893800F5C989 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FD21E42569893800F5C989 /* Film.swift */; };
+		68FD21EA25698A2600F5C989 /* StarshipController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FD21E925698A2600F5C989 /* StarshipController.swift */; };
+		68FD21EE25698D6A00F5C989 /* StarshipError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FD21ED25698D6A00F5C989 /* StarshipError.swift */; };
+		68FD21F2256997BF00F5C989 /* StarshipListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FD21F1256997BF00F5C989 /* StarshipListTableViewController.swift */; };
+		68FD21F52569A09100F5C989 /* StarshipDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FD21F42569A09100F5C989 /* StarshipDetailTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		2A281E042568D942004835E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A281E072568D942004835E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A281E092568D942004835E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68FD21E1256984C800F5C989 /* Starship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starship.swift; sourceTree = "<group>"; };
+		68FD21E42569893800F5C989 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
+		68FD21E925698A2600F5C989 /* StarshipController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipController.swift; sourceTree = "<group>"; };
+		68FD21ED25698D6A00F5C989 /* StarshipError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipError.swift; sourceTree = "<group>"; };
+		68FD21F1256997BF00F5C989 /* StarshipListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipListTableViewController.swift; sourceTree = "<group>"; };
+		68FD21F42569A09100F5C989 /* StarshipDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipDetailTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,8 @@
 		2A281DFA2568D940004835E9 /* SWAPIShips */ = {
 			isa = PBXGroup;
 			children = (
+				68FD21E7256989F000F5C989 /* Controllers */,
+				68FD21DC2569849000F5C989 /* Model */,
 				2A281E152568D9AE004835E9 /* Views */,
 				2A281E102568D98D004835E9 /* Resources */,
 			);
@@ -68,6 +82,7 @@
 				2A281E042568D942004835E9 /* Assets.xcassets */,
 				2A281E062568D942004835E9 /* LaunchScreen.storyboard */,
 				2A281E092568D942004835E9 /* Info.plist */,
+				68FD21ED25698D6A00F5C989 /* StarshipError.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -86,6 +101,41 @@
 				2A281E012568D940004835E9 /* Main.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		68FD21DC2569849000F5C989 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				68FD21E1256984C800F5C989 /* Starship.swift */,
+				68FD21E42569893800F5C989 /* Film.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		68FD21E7256989F000F5C989 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				68FD21F02569979100F5C989 /* View Controllers */,
+				68FD21E8256989FA00F5C989 /* Model Controllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		68FD21E8256989FA00F5C989 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				68FD21E925698A2600F5C989 /* StarshipController.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		68FD21F02569979100F5C989 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				68FD21F1256997BF00F5C989 /* StarshipListTableViewController.swift */,
+				68FD21F42569A09100F5C989 /* StarshipDetailTableViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,8 +208,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68FD21EE25698D6A00F5C989 /* StarshipError.swift in Sources */,
 				2A281DFC2568D940004835E9 /* AppDelegate.swift in Sources */,
+				68FD21F52569A09100F5C989 /* StarshipDetailTableViewController.swift in Sources */,
+				68FD21E52569893800F5C989 /* Film.swift in Sources */,
 				2A281DFE2568D940004835E9 /* SceneDelegate.swift in Sources */,
+				68FD21EA25698A2600F5C989 /* StarshipController.swift in Sources */,
+				68FD21E2256984C800F5C989 /* Starship.swift in Sources */,
+				68FD21F2256997BF00F5C989 /* StarshipListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,8 +363,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G359J97949;
+				DEVELOPMENT_TEAM = MB9J78CVZ9;
 				INFOPLIST_FILE = SWAPIShips/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -326,8 +383,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G359J97949;
+				DEVELOPMENT_TEAM = MB9J78CVZ9;
 				INFOPLIST_FILE = SWAPIShips/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
